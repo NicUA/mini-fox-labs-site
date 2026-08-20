@@ -1,51 +1,38 @@
-# Mini Fox Labs — GitHub Pages website
+# Mini Fox Labs website
 
-Готовый статический сайт для Mini Fox Labs.
+Static, GitHub Pages-ready website.
 
-## Что внутри
+## Included
+- Light theme by default + dark mode
+- Browser language detection + EN/RU/UA/DE/ES/PT/FR/PL/ZH/HI selector
+- Mini Fox Labs branding and application icons
+- App catalog + individual product pages
+- Support / FAQ
+- Changelog
+- Privacy Policy / Terms
+- Suggest-an-app mailto form (no backend)
+- Open Graph social preview
+- favicon + PWA manifest + service worker
+- robots.txt + sitemap.xml
+- responsive mobile design
 
-- светлая тема по умолчанию;
-- переключатель Light / Dark;
-- адаптивная мобильная версия;
-- блок «О нас»;
-- каталог приложений;
-- Privacy Policy;
-- Terms of Use;
-- 404 page;
-- без внешних библиотек и без аналитики.
+## Publish
+Upload the CONTENTS of this folder to the root of a public GitHub repository.
+Then Settings → Pages → Deploy from a branch → main → /(root).
 
-## Как опубликовать на GitHub Pages
+## When minifoxlabs.com is purchased
+1. Rename `CNAME.example` to `CNAME`.
+2. GitHub Settings → Pages → Custom domain → `minifoxlabs.com`.
+3. Add the GitHub Pages DNS records at your domain registrar.
+4. Enable Enforce HTTPS after DNS verification.
 
-1. Создайте новый репозиторий, например `mini-fox-labs-site`.
-2. Загрузите в корень репозитория все файлы из этой папки.
-3. GitHub → репозиторий → **Settings** → **Pages**.
-4. В разделе **Build and deployment**:
-   - Source: **Deploy from a branch**
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Нажмите Save.
+## Before final public launch
+- Replace Google Play placeholders with the real listing URL.
+- Configure `hello@minifoxlabs.com` or change the email in HTML files.
+- Replace preview phone mockups with real screenshots.
+- Review legal text before relying on it as final legal advice.
 
-Через короткое время сайт появится по адресу вида:
-
-`https://USERNAME.github.io/mini-fox-labs-site/`
-
-## Подключение minifoxlabs.com позже
-
-После покупки домена:
-
-1. GitHub → Settings → Pages → Custom domain.
-2. Введите `minifoxlabs.com`.
-3. У регистратора настройте DNS на GitHub Pages.
-4. После проверки включите **Enforce HTTPS**.
-
-После покупки домена можно также создать в корне файл `CNAME` с одной строкой:
-
-`minifoxlabs.com`
-
-## Перед публичным релизом
-
-- замените заглушки Google Play на реальные ссылки;
-- добавьте рабочий e-mail;
-- проверьте и дополните Privacy Policy для каждого приложения;
-- при необходимости добавьте Google Play developer page;
-- обновите Terms, если появятся платежи, аккаунты или подписки.
+## Google Play links
+- Developer page: https://play.google.com/store/apps/dev?id=6887978606017988674
+- Work Time Tracker testing: https://play.google.com/apps/testing/com.minifoxlabs.worktimer
+- Work Time Tracker store listing: https://play.google.com/store/apps/details?id=com.minifoxlabs.worktimer
