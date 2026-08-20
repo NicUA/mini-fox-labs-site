@@ -36,3 +36,8 @@ Then Settings → Pages → Deploy from a branch → main → /(root).
 - Developer page: https://play.google.com/store/apps/dev?id=6887978606017988674
 - Work Time Tracker testing: https://play.google.com/apps/testing/com.minifoxlabs.worktimer
 - Work Time Tracker store listing: https://play.google.com/store/apps/details?id=com.minifoxlabs.worktimer
+
+## v5 GitHub Pages fix
+Main visible images (brand logo and app icons) are embedded directly into HTML.
+This means the visual website no longer depends on the `assets` folder loading correctly.
+The assets folder is still included for future domain/PWA/social-preview use.
