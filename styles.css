@@ -85,3 +85,79 @@ textarea.field{min-height:125px;resize:vertical;grid-column:1/-1}.field:focus{bo
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
 
 .app-link-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* --- GitHub Pages / UI fixes v4 --- */
+.nav-actions{position:relative;z-index:120;flex-shrink:0}
+.language-wrap{position:relative;display:block}
+.language-menu{
+  position:absolute !important;
+  right:0 !important;
+  top:50px !important;
+  width:220px !important;
+  padding:8px !important;
+  display:block !important;
+  background:var(--solid) !important;
+  border:1px solid var(--line) !important;
+  border-radius:18px !important;
+  box-shadow:var(--shadow) !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  transform:translateY(-6px) scale(.98) !important;
+  transition:opacity .18s ease,transform .18s ease,visibility .18s ease !important;
+  z-index:999 !important;
+  overflow:hidden !important;
+}
+.language-menu.open{
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+  transform:translateY(0) scale(1) !important;
+}
+.language-menu button{
+  appearance:none !important;
+  -webkit-appearance:none !important;
+  width:100% !important;
+  min-height:40px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:14px !important;
+  margin:0 !important;
+  padding:9px 11px !important;
+  border:0 !important;
+  border-radius:12px !important;
+  background:transparent !important;
+  color:var(--text) !important;
+  font-size:14px !important;
+  line-height:1.2 !important;
+  cursor:pointer !important;
+}
+.language-menu button + button{margin-top:2px !important}
+.language-menu button:hover,.language-menu button.active{background:var(--soft) !important}
+.language-menu button span{
+  display:inline-block !important;
+  margin-left:auto !important;
+  color:var(--muted) !important;
+  font-size:11px !important;
+  font-weight:800 !important;
+  letter-spacing:.04em !important;
+}
+.app-icon{
+  display:block !important;
+  width:68px !important;
+  height:68px !important;
+  object-fit:cover !important;
+  border-radius:18px !important;
+  overflow:hidden !important;
+  flex:0 0 auto !important;
+}
+.app-card .tags span{
+  display:inline-flex !important;
+  align-items:center !important;
+}
+.tags{gap:6px !important}
+.tags span + span{margin-left:0 !important}
+@media(max-width:720px){
+  .language-menu{right:-48px !important;width:210px !important}
+}
