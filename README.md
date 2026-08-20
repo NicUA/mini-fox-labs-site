@@ -41,3 +41,23 @@ Then Settings → Pages → Deploy from a branch → main → /(root).
 Main visible images (brand logo and app icons) are embedded directly into HTML.
 This means the visual website no longer depends on the `assets` folder loading correctly.
 The assets folder is still included for future domain/PWA/social-preview use.
+
+## v6 flat-layout fix
+
+All HTML pages now live in the repository root.
+There is NO `apps` folder.
+
+Required root files include:
+- index.html
+- work-time-tracker.html
+- quick-notes-reminders.html
+- focus-fox.html
+- support.html
+- changelog.html
+- privacy.html
+- terms.html
+- 404.html
+- styles.css
+- script.js
+
+This layout is intentionally designed for reliable manual upload through GitHub's web interface.
