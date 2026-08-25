@@ -22,7 +22,7 @@
  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target)}}),{threshold:.08});
  document.querySelectorAll(".reveal").forEach(x=>obs.observe(x));
  const form=document.getElementById("ideaForm");form?.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(form),name=fd.get("name")||"",email=fd.get("email")||"",idea=fd.get("idea")||"";
-   const body=`Name: ${name}\nEmail: ${email}\n\nIdea / problem:\n${idea}`;location.href=`mailto:hello@minifoxlabs.com?subject=${encodeURIComponent("App idea for Mini Fox Labs")}&body=${encodeURIComponent(body)}`;showToast("Opening your email app…")});
+   const body=`Name: ${name}\nEmail: ${email}\n\nIdea / problem:\n${idea}`;location.href=`mailto:support@minifoxlabs.com?subject=${encodeURIComponent("App idea for Mini Fox Labs")}&body=${encodeURIComponent(body)}`;showToast("Opening your email app…")});
  function showToast(msg){let t=document.querySelector(".toast");if(!t){t=document.createElement("div");t.className="toast";document.body.appendChild(t)}t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200)}
  if("serviceWorker" in navigator && location.protocol.startsWith("http")) window.addEventListener("load",()=>Promise.resolve().catch(()=>{}));
 })();
