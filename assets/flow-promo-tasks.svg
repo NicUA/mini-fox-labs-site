@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200">
+<defs>
+  <radialGradient id="bg" cx="78%" cy="20%" r="90%"><stop stop-color="#1397d6"/><stop offset=".34" stop-color="#334ed1"/><stop offset=".68" stop-color="#8c35cf"/><stop offset="1" stop-color="#120e30"/></radialGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff7dc4"/><stop offset=".52" stop-color="#9c77ff"/><stop offset="1" stop-color="#62ddff"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#08051b" flood-opacity=".55"/></filter>
+</defs>
+<rect width="800" height="1200" rx="56" fill="url(#bg)"/>
+<circle cx="720" cy="115" r="190" fill="none" stroke="#5ee9ff" stroke-width="3" opacity=".35"/>
+<circle cx="85" cy="1030" r="240" fill="none" stroke="#ff8dd7" stroke-width="4" opacity=".2"/>
+<text x="54" y="82" fill="#fff" font-family="Arial,sans-serif" font-size="22" letter-spacing="10">FLOW</text>
+<text x="54" y="168" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">Stay focused</text>
+<text x="54" y="232" fill="url(#accent)" font-family="Arial,sans-serif" font-size="62" font-weight="700">every day</text>
+<text x="54" y="282" fill="#d7d8ff" font-family="Arial,sans-serif" font-size="25">Priorities and tasks without the clutter.</text>
+<g transform="translate(214 330) rotate(2 190 390)" filter="url(#shadow)">
+  <rect x="0" y="0" width="390" height="810" rx="54" fill="#090719" stroke="#a586ff" stroke-width="4"/>
+  <rect x="12" y="12" width="366" height="786" rx="44" fill="#10102b"/>
+  <image href="flow-tasks.svg" x="18" y="18" width="354" height="774" preserveAspectRatio="xMidYMid slice"/>
+</g>
+</svg>
