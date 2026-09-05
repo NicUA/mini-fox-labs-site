@@ -48,7 +48,44 @@
 .screenshots::after{transition:transform .2s ease,box-shadow .2s ease}
 .screenshots .screen-mock:hover{transform:translateY(-3px);box-shadow:0 24px 55px rgba(0,0,0,.14)}
 
+/* Current app icons — override old embedded artwork everywhere */
+img.app-icon[alt="Work Time Tracker"],
+img.page-icon[alt="Work Time Tracker icon"],
+img[alt="Work Time Tracker icon"]{
+  content:url("assets/work-time-tracker-icon.svg");
+  object-fit:cover;
+}
+img.app-icon[alt="Quick Notes & Reminders"],
+img.page-icon[alt="Quick Notes & Reminders icon"],
+img[alt="Flow"],
+img[alt="Flow icon"]{
+  content:url("assets/flow-icon.svg");
+  object-fit:cover;
+}
+
+/* Real Flow screenshots */
+.flow-real-screens{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:clamp(220px,24vw,300px);
+  gap:18px;
+  overflow-x:auto;
+  overscroll-behavior-inline:contain;
+  scroll-snap-type:inline mandatory;
+  padding:4px 2px 18px;
+  scrollbar-width:thin;
+}
+.flow-real-screens img{
+  width:100%;
+  aspect-ratio:420/873;
+  object-fit:cover;
+  border-radius:30px;
+  border:1px solid var(--line);
+  box-shadow:0 18px 45px rgba(0,0,0,.10);
+  scroll-snap-align:start;
+}
+
 @media(max-width:720px){
-  .screenshots{grid-auto-columns:min(78vw,300px);gap:14px;padding-bottom:14px}
+  .screenshots,.flow-real-screens{grid-auto-columns:min(78vw,300px);gap:14px;padding-bottom:14px}
   .section-heading:has(+ .screenshots)::after{font-size:13px}
 }
