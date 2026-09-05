@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200">
+<defs>
+  <radialGradient id="bg" cx="75%" cy="25%" r="85%"><stop stop-color="#0cc9e8"/><stop offset=".38" stop-color="#3556d8"/><stop offset=".72" stop-color="#6e32d3"/><stop offset="1" stop-color="#140f35"/></radialGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff7aa9"/><stop offset=".5" stop-color="#b873ff"/><stop offset="1" stop-color="#5ee7ff"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#08051b" flood-opacity=".55"/></filter>
+</defs>
+<rect width="800" height="1200" rx="56" fill="url(#bg)"/>
+<circle cx="690" cy="110" r="180" fill="none" stroke="#7cecff" stroke-width="3" opacity=".4"/>
+<circle cx="88" cy="970" r="260" fill="none" stroke="#ff86d2" stroke-width="4" opacity=".24"/>
+<text x="54" y="82" fill="#fff" font-family="Arial,sans-serif" font-size="22" letter-spacing="10">FLOW</text>
+<text x="54" y="168" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">Never miss</text>
+<text x="54" y="232" fill="url(#accent)" font-family="Arial,sans-serif" font-size="62" font-weight="700">what matters</text>
+<text x="54" y="282" fill="#d7d8ff" font-family="Arial,sans-serif" font-size="25">Fast reminders, custom sounds, calm design.</text>
+<g transform="translate(214 330) rotate(-2 190 390)" filter="url(#shadow)">
+  <rect x="0" y="0" width="390" height="810" rx="54" fill="#090719" stroke="#b48cff" stroke-width="4"/>
+  <rect x="12" y="12" width="366" height="786" rx="44" fill="#10102b"/>
+  <image href="flow-reminders.svg" x="18" y="18" width="354" height="774" preserveAspectRatio="xMidYMid slice"/>
+</g>
+</svg>
