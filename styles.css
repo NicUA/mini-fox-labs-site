@@ -50,15 +50,21 @@
 
 /* Current app icons — override old embedded artwork everywhere */
 img.app-icon[alt="Work Time Tracker"],
+img.app-icon[alt*="Work Time"],
 img.page-icon[alt="Work Time Tracker icon"],
-img[alt="Work Time Tracker icon"]{
+img[alt="Work Time Tracker icon"],
+img[src$="app-worktime.png"],
+img.page-icon[src^="data:image/webp;base64,UklGRioT"]{
   content:url("assets/work-time-tracker-icon.svg");
   object-fit:cover;
 }
 img.app-icon[alt="Quick Notes & Reminders"],
+img.app-icon[alt*="Flow"],
 img.page-icon[alt="Quick Notes & Reminders icon"],
+img.page-icon[alt*="Flow"],
 img[alt="Flow"],
-img[alt="Flow icon"]{
+img[alt="Flow icon"],
+img[src$="app-notes.png"]{
   content:url("assets/flow-icon.svg");
   object-fit:cover;
 }
