@@ -69,7 +69,7 @@ img[src$="app-notes.png"]{
   object-fit:cover;
 }
 
-/* Real Flow screenshots */
+/* Flow screenshots / promo previews */
 .flow-real-screens{
   display:grid;
   grid-auto-flow:column;
@@ -90,8 +90,11 @@ img[src$="app-notes.png"]{
   box-shadow:0 18px 45px rgba(0,0,0,.10);
   scroll-snap-align:start;
 }
+.flow-promo-screens{grid-auto-columns:clamp(250px,28vw,340px)}
+.flow-promo-screens img{aspect-ratio:2/3;object-fit:cover}
 
 @media(max-width:720px){
   .screenshots,.flow-real-screens{grid-auto-columns:min(78vw,300px);gap:14px;padding-bottom:14px}
+  .flow-promo-screens{grid-auto-columns:min(82vw,330px)}
   .section-heading:has(+ .screenshots)::after{font-size:13px}
 }
