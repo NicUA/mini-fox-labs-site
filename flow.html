@@ -1,59 +1,58 @@
 <!doctype html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Flow — Mini Fox Labs</title>
-  <meta name="description" content="Flow is an offline Android app for tasks, reminders, shopping lists and birthdays.">
-  <link rel="canonical" href="https://minifoxlabs.com/flow.html">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/flow-icon.svg" type="image/svg+xml">
-  <style>
-    .flow-wrap{max-width:1100px;margin:0 auto;padding:110px 24px 80px}.flow-nav{margin-bottom:24px}.flow-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}.flow-card{background:var(--card,#fff);border:1px solid rgba(127,127,127,.18);border-radius:30px;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.06)}.flow-icon-img{width:112px;height:112px;border-radius:28px;display:block}.flow-tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.flow-tag{padding:8px 12px;border-radius:999px;background:rgba(127,127,127,.1)}.flow-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}.flow-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}.flow-gallery{margin-top:46px}.flow-gallery h2{margin-bottom:8px}.flow-gallery p{color:var(--muted);margin-bottom:20px}.flow-promo-screens{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,28vw,320px);gap:18px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:inline mandatory}.flow-promo-screens img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:28px;display:block;scroll-snap-align:start;box-shadow:0 18px 45px rgba(0,0,0,.14)}@media(max-width:760px){.flow-hero,.flow-features{grid-template-columns:1fr}.flow-wrap{padding-top:88px}.flow-promo-screens{grid-auto-columns:min(78vw,300px)}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flow — Mini Fox Labs</title>
+<meta name="description" content="Flow is an offline Android app for tasks, reminders, shopping lists and birthdays.">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="canonical" href="https://minifoxlabs.com/flow.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Flow — Mini Fox Labs">
+<meta property="og:description" content="Tasks, reminders, shopping lists and birthdays in one calm, offline-first Android app.">
+<meta property="og:url" content="https://minifoxlabs.com/flow.html">
+<meta property="og:image" content="https://minifoxlabs.com/assets/flow-gallery-overview.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/flow-icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css?v=7">
+<style>
+.flow-store-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,27vw,320px);gap:18px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:inline mandatory;scrollbar-width:thin}.flow-store-gallery img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:28px;border:1px solid var(--line);box-shadow:0 18px 45px rgba(0,0,0,.12);scroll-snap-align:start;display:block}.flow-page-icon{width:180px;height:180px;border-radius:42px;box-shadow:0 24px 60px rgba(65,94,255,.20)}@media(max-width:720px){.flow-store-gallery{grid-auto-columns:min(80vw,300px)}.flow-page-icon{width:132px;height:132px;border-radius:32px}}
+</style>
 </head>
 <body>
-  <main class="flow-wrap">
-    <div class="flow-nav"><a class="text-link" href="index.html">← Mini Fox Labs</a></div>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html"><img class="brand-logo" src="favicon.png" alt=""><span>Mini Fox Labs</span></a>
+<nav class="desktop-nav"><a href="index.html#about">About</a><a href="index.html#apps">Apps</a><a href="index.html#principles">Principles</a><a href="support.html">Support</a><a href="changelog.html">Updates</a></nav>
+<div class="nav-actions"><button class="round-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button></div>
+</div><div class="mobile-menu container" id="mobileMenu"><a href="index.html#about">About</a><a href="index.html#apps">Apps</a><a href="index.html#principles">Principles</a><a href="support.html">Support</a><a href="changelog.html">Updates</a></div></header>
 
-    <section class="flow-hero">
-      <div>
-        <div class="eyebrow">MINI FOX LABS</div>
-        <h1>Flow</h1>
-        <p>Tasks, reminders, shopping lists and birthdays in one calm, offline-first Android app.</p>
-        <div class="flow-tags"><span class="flow-tag">Android</span><span class="flow-tag">Offline</span><span class="flow-tag">Privacy-first</span><span class="flow-tag">8 languages</span></div>
-        <div class="flow-actions">
-          <a class="text-link" href="flow-privacy.html">Privacy Policy →</a>
-          <a class="text-link" href="mailto:support@minifoxlabs.com?subject=Flow%20feedback">Support →</a>
-        </div>
-      </div>
-      <div class="flow-card">
-        <img class="flow-icon-img" src="assets/flow-icon.svg" alt="Flow icon">
-        <h2>Built to stay simple</h2>
-        <p>Everything you need for everyday planning, without accounts, ads or cloud clutter.</p>
-      </div>
-    </section>
+<main>
+<section class="page-hero"><div class="container page-hero-wrap">
+<div class="reveal"><div class="eyebrow">MINI FOX LABS APP</div><h1>Flow</h1><p class="page-copy">Tasks, reminders, shopping lists and birthdays in one calm, offline-first Android app.</p><div class="action-row"><a class="button button-secondary" href="flow-privacy.html">Privacy Policy</a><a class="button button-secondary" href="mailto:support@minifoxlabs.com?subject=Flow%20feedback">Support</a></div></div>
+<img class="page-icon flow-page-icon reveal" src="assets/flow-icon.svg" alt="Flow icon">
+</div></section>
 
-    <section class="flow-gallery">
-      <div class="eyebrow">FLOW PREVIEWS</div>
-      <h2>Flow in action</h2>
-      <p>Beautiful previews built from the current Flow interface.</p>
-      <div class="flow-promo-screens">
-        <img src="assets/flow-gallery-overview.webp" alt="Flow overview preview" loading="lazy">
-        <img src="assets/flow-gallery-reminders.webp" alt="Flow reminders preview" loading="lazy">
-        <img src="assets/flow-gallery-tasks.webp" alt="Flow tasks preview" loading="lazy">
-        <img src="assets/flow-gallery-shopping.webp" alt="Flow shopping preview" loading="lazy">
-        <img src="assets/flow-gallery-birthdays.webp" alt="Flow birthdays preview" loading="lazy">
-        <img src="assets/flow-gallery-settings.webp" alt="Flow settings preview" loading="lazy">
-      </div>
-    </section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><div class="eyebrow">FEATURES</div><h2>Everything you need. Nothing you don’t.</h2></div></div><div class="feature-grid">
+<article class="feature reveal"><div class="feature-icon">🔔</div><h3>Reminders</h3><p>Schedule reminders with notification support and custom sounds.</p></article>
+<article class="feature reveal"><div class="feature-icon">✓</div><h3>Tasks</h3><p>Create, prioritise and complete everyday tasks without clutter.</p></article>
+<article class="feature reveal"><div class="feature-icon">🛒</div><h3>Shopping</h3><p>Organise shopping with categories, colours and fast filters.</p></article>
+<article class="feature reveal"><div class="feature-icon">🎂</div><h3>Birthdays</h3><p>Save birthdays, see ages and choose when you want to be reminded.</p></article>
+</div></div></section>
 
-    <section class="flow-features">
-      <article class="flow-card"><h3>Reminders</h3><p>Schedule reminders with notification support and custom sounds.</p></article>
-      <article class="flow-card"><h3>Tasks</h3><p>Create, prioritise and complete everyday tasks.</p></article>
-      <article class="flow-card"><h3>Shopping</h3><p>Keep shopping organised with categories and filters.</p></article>
-      <article class="flow-card"><h3>Birthdays</h3><p>Save birthdays and get notified before important dates.</p></article>
-    </section>
-  </main>
-</body>
-</html>
+<section class="section"><div class="container"><div class="glass-card split-card"><div><div class="eyebrow">BUILT FOR EVERYDAY USE</div><h2>Calm, private and offline-first.</h2><p>Flow keeps everyday planning simple without forcing an account or cloud service.</p><ul><li>Core features work offline.</li><li>No account is required.</li><li>Tasks, reminders, shopping and birthdays stay together.</li><li>Custom categories, sounds, language and appearance.</li></ul></div><div class="quote-card"><strong>Privacy-first by design.</strong><span>Your everyday data stays on your device in the current release.</span><div class="action-row"><a class="button button-secondary" href="flow-privacy.html">Read Privacy Policy</a></div></div></div></div></section>
+
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><div class="eyebrow">FLOW PREVIEWS</div><h2>Flow in action.</h2></div><p>See reminders, tasks, shopping, birthdays and settings in the current app design.</p></div>
+<div class="flow-store-gallery">
+<img src="assets/flow-gallery-overview.webp" alt="Flow overview preview" loading="lazy">
+<img src="assets/flow-gallery-reminders.webp" alt="Flow reminders preview" loading="lazy">
+<img src="assets/flow-gallery-tasks.webp" alt="Flow tasks preview" loading="lazy">
+<img src="assets/flow-gallery-shopping.webp" alt="Flow shopping preview" loading="lazy">
+<img src="assets/flow-gallery-birthdays.webp" alt="Flow birthdays preview" loading="lazy">
+<img src="assets/flow-gallery-settings.webp" alt="Flow settings preview" loading="lazy">
+</div></div></section>
+
+<section class="section"><div class="container"><div class="glass-card split-card"><div><div class="eyebrow">SUPPORT</div><h2>Need help with Flow?</h2><p>Questions, feedback or a bug report — send us a message and we’ll help.</p></div><div class="quote-card"><strong>support@minifoxlabs.com</strong><span>Mini Fox Labs support for Flow.</span><div class="action-row"><a class="button button-primary" href="mailto:support@minifoxlabs.com?subject=Flow%20support">Email Support</a><a class="button button-secondary" href="support.html">Support page</a></div></div></div></div></section>
+</main>
+
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img class="brand-logo" src="favicon.png" alt=""><span>Mini Fox Labs</span></a><p>Independent studio of useful apps.</p></div><div class="footer-links"><a href="support.html">Support</a><a href="changelog.html">Changelog</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://play.google.com/store/apps/dev?id=6887978606017988674" target="_blank" rel="noopener">Google Play Developer</a><a href="mailto:support@minifoxlabs.com">support@minifoxlabs.com</a></div></div><div class="container copyright">© <span id="year"></span> Mini Fox Labs. All rights reserved.</div></footer>
+<script src="script.js?v=6"></script>
+</body></html>
