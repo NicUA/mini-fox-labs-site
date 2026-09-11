@@ -132,3 +132,10 @@ html{scroll-behavior:smooth}
   .app-grid .app-card,.app-card .app-icon,.screenshots .screen-mock,.screenshots::before,.screenshots::after,.flow-real-screens img,.text-link{transition:none}
   .app-grid .app-card:hover,.screenshots .screen-mock:hover,.screenshots::before:hover,.screenshots::after:hover,.flow-real-screens img:hover,.text-link:hover{transform:none}
 }
+
+
+/* Continuous page surfaces — remove divider bands between sections */
+.site-header,.footer,section.section,section.section-soft,.page-hero,.legal-page,.policy-wrap{border-top:0!important;border-bottom:0!important}
+.section-soft{background:transparent!important}
+.section + .section,.section-soft + .section,.section + .section-soft,.section-soft + .section-soft{border-top:0!important}
+.glass-card,.app-card,.principle,.feature{border-top-color:transparent}
