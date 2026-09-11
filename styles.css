@@ -98,3 +98,37 @@ img[src$="app-notes.png"]{
   .flow-promo-screens{grid-auto-columns:min(82vw,330px)}
   .section-heading:has(+ .screenshots)::after{font-size:13px}
 }
+
+
+/* Motion layer — calm, tactile interactions */
+html{scroll-behavior:smooth}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+.reveal.visible{opacity:1;transform:none}
+.hero .reveal:first-child{transition-delay:.04s}
+.hero .reveal:nth-child(2){transition-delay:.14s}
+
+.app-grid .app-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.app-grid .app-card:hover{transform:translateY(-8px);border-color:rgba(241,127,58,.34);box-shadow:0 24px 54px rgba(34,28,24,.13)}
+.app-card .app-icon{transition:transform .32s cubic-bezier(.22,1,.36,1),filter .32s ease}
+.app-grid .app-card:hover .app-icon{transform:scale(1.06) rotate(-2deg);filter:saturate(1.08)}
+.app-grid .app-card:nth-child(2){transition-delay:.04s}
+.app-grid .app-card:nth-child(3){transition-delay:.08s}
+.app-grid .app-card:nth-child(4){transition-delay:.12s}
+
+.screenshots .screen-mock,.screenshots::before,.screenshots::after,.flow-real-screens img{
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.screenshots .screen-mock:hover,.screenshots::before:hover,.screenshots::after:hover,.flow-real-screens img:hover{
+  transform:translateY(-7px) scale(1.015);
+  border-color:rgba(241,127,58,.34);
+  box-shadow:0 26px 58px rgba(34,28,24,.16);
+}
+.text-link{transition:color .2s ease,transform .2s ease}
+.text-link:hover{transform:translateX(3px)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .app-grid .app-card,.app-card .app-icon,.screenshots .screen-mock,.screenshots::before,.screenshots::after,.flow-real-screens img,.text-link{transition:none}
+  .app-grid .app-card:hover,.screenshots .screen-mock:hover,.screenshots::before:hover,.screenshots::after:hover,.flow-real-screens img:hover,.text-link:hover{transform:none}
+}
