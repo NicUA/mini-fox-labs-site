@@ -19,7 +19,7 @@ root.dataset.theme=localStorage.getItem("miniFoxTheme")==="dark"?"dark":"light";
    document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{const k=el.dataset.i18nPlaceholder;const v=T[l][k]??T.en[k];if(v)el.placeholder=v});
    if(currentLang)currentLang.textContent=(l==="uk"?"UA":l.toUpperCase());document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));
    localStorage.setItem("miniFoxLanguage",l);langMenu?.classList.remove("open")}
- setLang(localStorage.getItem("miniFoxLanguage")||"uk");
+ setLang(localStorage.getItem("miniFoxLanguage")||"en");
  langBtn?.addEventListener("click",e=>{e.stopPropagation();langMenu?.classList.toggle("open")});
  document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
  document.addEventListener("click",e=>{if(!e.target.closest(".language-wrap"))langMenu?.classList.remove("open")});
