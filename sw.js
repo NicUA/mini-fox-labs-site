@@ -1,4 +1,4 @@
-const CACHE = "minifox-v4";
+const CACHE = "minifox-v5";
 const CORE = [
   "./",
   "./index.html",
@@ -8,8 +8,12 @@ const CORE = [
   "./changelog.html",
   "./privacy.html",
   "./terms.html",
-  "./assets/favicon.png",
-  "./assets/og-image.jpg"
+  "./favicon.png",
+  "./og-image.jpg",
+  "./ai-studio/",
+  "./ai-studio.css",
+  "./ai-studio.js",
+  "./studio-content.js"
 ];
 
 self.addEventListener("install", event => {
@@ -37,7 +41,7 @@ self.addEventListener("fetch", event => {
     fetch(event.request)
       .then(response => {
         const copy = response.clone();
-        caches.open(CACHE).then(cache => cache.put(event.request, copy));
+        if (response.ok) caches.open(CACHE).then(cache => cache.put(event.request, copy)).catch(() => {});
         return response;
       })
       .catch(() => caches.match(event.request))
