@@ -14,7 +14,7 @@
   const close = document.createElement('button');
   close.type = 'button';
   close.className = 'studio-image-close';
-  close.textContent = '×';
+  close.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   const fullImage = document.createElement('img');
   viewer.append(close, fullImage);
   document.body.append(viewer);

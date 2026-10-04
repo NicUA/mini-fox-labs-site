@@ -66,3 +66,10 @@ test('Screenshots use anonymised assets and an in-page image viewer', () => {
   assert.match(js, /viewer\.close\(\)/);
   assert.match(js, /studio-hero-shot img, \.studio-gallery img/);
 });
+test('Home links use the clean root URL and close icon is vector-centered', () => {
+  for (const file of fs.readdirSync(root).filter(name => name.endsWith('.html'))) {
+    assert.doesNotMatch(read(file), /href="\/?index\.html(?:#|\")/, file);
+  }
+  assert.match(read('ai-studio.js'), /<svg viewBox="0 0 24 24"/);
+  assert.match(read('ai-studio.css'), /\.studio-image-close\{[^}]*display:grid;place-items:center/);
+});
