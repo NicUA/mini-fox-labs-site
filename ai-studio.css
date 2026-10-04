@@ -1,4 +1,12 @@
 /* Shared public Studio presentation; uses the site's existing theme tokens. */
+.studio-image-trigger{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.studio-gallery a{cursor:zoom-in}
+.studio-viewer-open{overflow:hidden}
+.studio-image-viewer{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:64px 20px 20px;border:0;background:rgba(10,12,20,.95);overflow:auto}
+.studio-image-viewer::backdrop{background:rgba(10,12,20,.85)}
+.studio-image-viewer img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100dvh - 84px);margin:auto;object-fit:contain}
+.studio-image-close{position:fixed;top:14px;right:20px;width:42px;height:42px;border:1px solid #687080;border-radius:50%;background:#252b38;color:white;font-size:30px;line-height:1;cursor:pointer;z-index:1}
+.studio-image-close:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .studio-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;color:var(--muted);background:var(--surface)}
 .studio-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .studio-preview{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;overflow:hidden;text-decoration:none;color:var(--text);transition:border-color .2s,box-shadow .2s}

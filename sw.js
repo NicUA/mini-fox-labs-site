@@ -1,4 +1,4 @@
-const CACHE = "minifox-v5";
+const CACHE = "minifox-v6";
 const CORE = [
   "./",
   "./index.html",

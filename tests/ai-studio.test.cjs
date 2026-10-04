@@ -53,3 +53,16 @@ test('Nested page registers root worker and cache assets resolve', () => {
   for (const [, url] of read('sw.js').matchAll(/"\.\/([^"\n]*)"/g)) assert(fs.existsSync(path.join(root, url)), url);
   assert.match(read('sitemap.xml'), /https:\/\/minifoxlabs.com\/ai-studio\//);
 });
+test('Screenshots use anonymised assets and an in-page image viewer', () => {
+  for (const html of [home, studio]) {
+    assert.doesNotMatch(html, /ai-studio-(dashboard|production)\.jpg/);
+    assert.match(html, /ai-studio-dashboard-demo\.png/);
+  }
+  assert.doesNotMatch(studio, /href="[^"]+\.(jpg|png|webp)"[^>]*target="_blank"/);
+  const js = read('ai-studio.js');
+  assert.match(js, /event\.preventDefault\(\)/);
+  assert.match(js, /viewer\.showModal\(\)/);
+  assert.match(js, /opener\?\.focus\(\)/);
+  assert.match(js, /viewer\.close\(\)/);
+  assert.match(js, /studio-hero-shot img, \.studio-gallery img/);
+});
