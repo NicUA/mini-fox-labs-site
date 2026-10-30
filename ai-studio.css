@@ -13,7 +13,7 @@
 .studio-preview{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;overflow:hidden;text-decoration:none;color:var(--text);transition:border-color .2s,box-shadow .2s}
 .studio-preview:hover{border-color:var(--accent);box-shadow:0 24px 70px rgba(90,80,150,.15)}
 .studio-preview-copy{padding:clamp(24px,4vw,46px)}
-.studio-mark{display:grid;place-items:center;width:48px;height:48px;color:white;background:linear-gradient(145deg,#6165e8,#3449b8);border-radius:15px;font-size:28px;margin-bottom:22px}
+.studio-mark{display:block;width:48px;height:48px;object-fit:cover;border-radius:15px;margin-bottom:22px}
 .studio-preview h3{font-size:36px;letter-spacing:-.04em;margin-bottom:12px}
 .studio-preview p{color:var(--muted);font-size:17px;max-width:430px}
 .studio-pills{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}

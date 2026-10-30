@@ -1,4 +1,4 @@
-const CACHE = "minifox-v7";
+const CACHE = "minifox-v8";
 const CORE = [
   "./",
   "./index.html",
@@ -9,6 +9,7 @@ const CORE = [
   "./privacy.html",
   "./terms.html",
   "./favicon.png",
+  "./assets/ai-studio-icon.png",
   "./og-image.jpg",
   "./ai-studio/",
   "./ai-studio.css",
